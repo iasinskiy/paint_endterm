@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рисование в браузере</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="https://avatars.mds.yandex.net/i?id=126ed9fcc90507270d3dceadebec1ded35fd619971f7a1f7-4576817-images-thumbs&n=13">
+</head>
+<body>
+  <div id="app">
+    <h1>Инструмент для рисования</h1>
+    <div id="controls">
+      <input type="color" id="color-picker" value="#000000">
+      <input type="range" id="brush-size" min="1" max="50" value="5">
+      <button id="undo">Отменить</button>
+      <button id="redo">Повторить</button>
+      <button id="clear">Очистить</button>
+      <button id="save">Сохранить</button>
+    </div>
+    <canvas id="canvas"></canvas>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
